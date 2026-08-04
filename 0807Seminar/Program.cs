@@ -8,25 +8,15 @@ namespace ch9
         {
 
 
-            double a = double.PositiveInfinity;
-            float b = float.NegativeInfinity;
+            int a = 3;
+            int b = a++;
+            Console.WriteLine($"a: {a}, b: {b}"); // b에는 원래 a 값이 할당되고 그 다음에 연산
 
-            Console.WriteLine(a + 1);
-            Console.WriteLine(b - 1);
+            int c = 3;
+            int d = ++c;
+            Console.WriteLine($"c: {c}, d: {d}"); // c가 먼저 증가하고 그 다음할당 
 
-            double nanValue = double.NaN;
-            Console.WriteLine(nanValue);
 
-            double undefinedRsult = 0.0 / 0.0;
-            Console.WriteLine(undefinedRsult);
-
-            int maximumInt = int.MaxValue; // int 타입이 가질 수 있는 최댓값
-            int minimumInt = int.MinValue; // int 타입이 가질 수 있는 최솟
-            short maximumShort = short.MaxValue; // short 타입이 가질 수 있는 최댓값
-
-            Console.WriteLine($"int 최대값: {maximumInt}"); // 출력: int 최대값: 2147483647
-            Console.WriteLine($"int 최소값: {minimumInt}"); // 출력: int 최소값: -2147483648
-            Console.WriteLine($"short 최대값: {maximumShort}"); // 출력: short 최대값: 32767
 
 
 

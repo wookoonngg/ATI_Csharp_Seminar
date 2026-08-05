@@ -9,22 +9,25 @@ namespace ch9
 
             int score = 75;
             string message = (score > 70) ? "합격!" : "불합격!";
-            Console.WriteLine(message); 
+            Console.WriteLine(message);
 
-            if (score> 70)
+
+            int menuChoice = 3;
+            switch (menuChoice)
             {
-                message = "합격";
+                case 1: 
+                    Console.WriteLine("메뉴 1 선택");
+                    break;
+                case 2:
+                    Console.WriteLine("메뉴 2 선택");
+                    break;
+                case 3:
+                    Console.WriteLine("메뉴 3 선택");
+                    break;
+                default:
+                    Console.WriteLine("잘못된 선택");
+                    break;
             }
-            else
-            {
-                message = "불합격";
-
-            }
-
-
-
-
-
 
 
 

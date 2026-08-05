@@ -7,14 +7,20 @@ namespace ch9
         static void Main(string[] args)
         {
 
+            int score = 75;
+            string message = (score > 70) ? "합격!" : "불합격!";
+            Console.WriteLine(message); 
 
-            int a = 3;
-            int b = a++;
-            Console.WriteLine($"a: {a}, b: {b}"); // b에는 원래 a 값이 할당되고 그 다음에 연산
+            if (score> 70)
+            {
+                message = "합격";
+            }
+            else
+            {
+                message = "불합격";
 
-            int c = 3;
-            int d = ++c;
-            Console.WriteLine($"c: {c}, d: {d}"); // c가 먼저 증가하고 그 다음할당 
+            }
+
 
 
 

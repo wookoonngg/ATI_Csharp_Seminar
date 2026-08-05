@@ -2,36 +2,24 @@
 
 namespace ch9
 {
-    class Program
+   
+    public class Program
     {
+        static int Factorial(int n)
+        {
+            if (n == 0)
+            {
+                return 1;
+            }
+            else
+            {
+                return n * Factorial(n - 1);
+            }
+        }
         static void Main(string[] args)
         {
-
-            string[] fruits = { "사과", "바나나", "체리" };
-            foreach (string fruit in fruits)
-            {
-                Console.WriteLine(fruit);
-            }
-
-
-            for(int i = 1; i <10; i++)
-            {
-                for (int j =1; j < 10; j++)
-                {
-                    Console.WriteLine($"{i} * {j} = {i * j}");
-                }
-                Console.WriteLine();
-            }
-
-
-            int[,] arr = new int[9,9];
-            for (int i = 0; i < 9; i++)
-            {
-                for (int j = 0; j < 9; j++)
-                {
-                    arr[i,j] = (i + 1) * (j + 1);
-                }
-            }   
+            int result = Factorial(5);
+            Console.WriteLine($"Factorial of 5 is: {result}");
 
 
         }

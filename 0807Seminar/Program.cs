@@ -7,17 +7,31 @@ namespace ch9
         static void Main(string[] args)
         {
 
-            int[][] jaggedMatrix = new int[3][]; // 3행 행렬 하나 생성 
-            jaggedMatrix[0] = new int[] { 1, 2, 3 }; // 첫 번째 행은 1,2,3 3개 배열 또 생성 
-            jaggedMatrix[1] = new int[] { 4, 5 }; // 두 번째 행은 4,5 2개 배열 
-            jaggedMatrix[2] = new int[] { 6, 7, 8, 9 }; // 세 번째 행은 6,7,8,9 4개 배열
+            string[] fruits = { "사과", "바나나", "체리" };
+            foreach (string fruit in fruits)
+            {
+                Console.WriteLine(fruit);
+            }
 
-            Console.WriteLine(jaggedMatrix[1][1]);
 
-            int[,] rectangularMatrix = new int[2, 3]; // 2행 3열 행렬 생성
-            rectangularMatrix[0, 0] = 1;
-            rectangularMatrix[0, 1] = 2;
-            Console.WriteLine(rectangularMatrix[0, 1]);
+            for(int i = 1; i <10; i++)
+            {
+                for (int j =1; j < 10; j++)
+                {
+                    Console.WriteLine($"{i} * {j} = {i * j}");
+                }
+                Console.WriteLine();
+            }
+
+
+            int[,] arr = new int[9,9];
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    arr[i,j] = (i + 1) * (j + 1);
+                }
+            }   
 
 
         }

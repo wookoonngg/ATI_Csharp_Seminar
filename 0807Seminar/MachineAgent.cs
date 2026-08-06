@@ -49,6 +49,10 @@ namespace _0807Seminar
             Console.WriteLine(eq + " : 촬영 시작");
             camera.grab();
             Console.WriteLine(eq + " : 촬영 종료");
+            Console.WriteLine();
+
+
+
         }
 
 

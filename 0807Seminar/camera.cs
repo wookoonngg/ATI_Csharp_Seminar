@@ -1,6 +1,4 @@
 ﻿using System;
-
-
 namespace _0807Seminar
 {
     class Camera
@@ -34,6 +32,8 @@ namespace _0807Seminar
             this.name = name;
             this.trigger = trigger;
             this.light = light; // 트리거 라이트 둘다 필요하니까 둘 다 필드 값을 받아와야함 
+
+
         }
 
 

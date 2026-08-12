@@ -26,7 +26,7 @@ namespace _0814Seminar
 
 
         }
-
+    
 
         static void Main(string[] arg)
         {
@@ -35,8 +35,8 @@ namespace _0814Seminar
 
             if (polygon is Square)
             {
-                Square square = (Square)polygon;    
-                Console.WriteLine (square.Size);
+                Square square = (Square)polygon;
+                Console.WriteLine(square.Size);
             }
 
         }
@@ -45,6 +45,6 @@ namespace _0814Seminar
 
 
 
-
     }
+    
 }

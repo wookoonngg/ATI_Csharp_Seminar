@@ -36,6 +36,21 @@
         }
     }
 
+    class ch24
+    {
+        static void Main(string[] args)
+        {
+
+            IFileWriter[] fileWriters = new IFileWriter[2];
+            fileWriters[0] = new TextFileWriter();
+            fileWriters[1] = new RtfFileWriter();
 
 
+            foreach (IFileWriter writer in fileWriters)
+            {
+                writer.Write("document"); // 각 객체마다의 Write() 메소드가 호출됨 다형성 구현
+            }
+
+        }
+    }
 }
